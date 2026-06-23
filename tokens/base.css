@@ -1,0 +1,40 @@
+/* Bina — base layer: light resets + element defaults.
+   Opinionated but minimal; tokens do the heavy lifting. */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-primary);
+  font: var(--type-body);
+  font-feature-settings: 'ss01', 'cv01';
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* headings default to the display serif */
+h1, h2, h3 { font-family: var(--font-display); color: var(--text-display); margin: 0; line-height: var(--lh-tight); font-weight: var(--fw-semibold); }
+h4, h5, h6 { font-family: var(--font-body); color: var(--text-primary); margin: 0; line-height: var(--lh-snug); }
+
+p { margin: 0; }
+a { color: var(--text-link); text-decoration: none; }
+a:hover { color: var(--glow-300); }
+
+::selection { background: color-mix(in oklch, var(--glow-500) 40%, transparent); color: var(--moon); }
+
+:focus-visible { outline: 2px solid var(--ring); outline-offset: 2px; border-radius: var(--radius-xs); }
+
+/* mono eyebrow helper — the recurring "machinery" label */
+.eyebrow {
+  font: var(--type-mono-eyebrow);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb { background: var(--night-700); border-radius: 999px; border: 2px solid transparent; background-clip: content-box; }
+::-webkit-scrollbar-thumb:hover { background: var(--night-600); background-clip: content-box; }

@@ -1,0 +1,9 @@
+/* Bina — Webfonts
+   Loaded from Google Fonts CDN. These @import-ed @font-face rules ship to consumers.
+   - Cormorant Garamond : ethereal high-contrast display serif (moonlit, literary)
+   - Hanken Grotesk     : clean humanist body sans
+   - IBM Plex Mono      : data / dates / labels (timeline machinery)
+   NOTE (substitution): binaries are served by Google rather than self-hosted in /assets.
+   If you need offline/self-hosted fonts, ask and I'll swap in local .woff2 files. */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Hanken+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap');

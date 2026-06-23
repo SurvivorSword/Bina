@@ -1,0 +1,15 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bina">
+  <defs>
+    <radialGradient id="sel-moon" cx="38%" cy="34%" r="72%">
+      <stop offset="0%" stop-color="#F6F9FF"></stop>
+      <stop offset="55%" stop-color="#9CCBFF"></stop>
+      <stop offset="100%" stop-color="#4B9FFF"></stop>
+    </radialGradient>
+    <mask id="sel-crescent">
+      <rect width="64" height="64" fill="black"></rect>
+      <circle cx="32" cy="32" r="21" fill="white"></circle>
+      <circle cx="42" cy="26" r="18" fill="black"></circle>
+    </mask>
+  </defs>
+  <circle cx="32" cy="32" r="21" fill="url(#sel-moon)" mask="url(#sel-crescent)"></circle>
+</svg>

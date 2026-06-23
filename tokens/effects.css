@@ -1,0 +1,37 @@
+/* Bina — Effects: shadows, glows, blur, gradients, motion.
+   The signature is LIGHT in darkness — luminous glows, not heavy drop shadows. */
+
+:root {
+  /* elevation — dark UI uses deep, soft shadows + a faint top highlight */
+  --shadow-sm:  0 1px 2px rgba(0,0,0,.4);
+  --shadow-md:  0 6px 20px -6px rgba(0,0,0,.55);
+  --shadow-lg:  0 20px 50px -12px rgba(0,0,0,.65);
+  --shadow-xl:  0 36px 80px -20px rgba(0,0,0,.7);
+
+  /* glow — the bioluminescent signature; use sparingly on accents */
+  --glow-sm: 0 0 0 1px color-mix(in oklch, var(--glow-500) 30%, transparent),
+             0 0 12px -2px color-mix(in oklch, var(--glow-500) 45%, transparent);
+  --glow-md: 0 0 24px -2px color-mix(in oklch, var(--glow-500) 55%, transparent);
+  --glow-plum: 0 0 24px -2px color-mix(in oklch, var(--plum-400) 50%, transparent);
+  --glow-text: 0 0 22px color-mix(in oklch, var(--glow-300) 35%, transparent);
+
+  /* inner top-light, gives cards a faint moonlit rim */
+  --rim-light: inset 0 1px 0 color-mix(in oklch, var(--moon) 8%, transparent);
+
+  /* blur — frosted glass over imagery */
+  --blur-glass: saturate(140%) blur(16px); /* @kind other */
+
+  /* gradients */
+  --grad-sky:  linear-gradient(180deg, var(--night-950) 0%, var(--night-900) 45%, var(--night-850) 100%);
+  --grad-moon: radial-gradient(120% 120% at 80% 0%, color-mix(in oklch, var(--glow-300) 22%, transparent) 0%, transparent 55%);
+  --grad-accent: linear-gradient(135deg, var(--glow-400), var(--cobalt-500));
+  --grad-aurora: linear-gradient(110deg, var(--glow-500), var(--cobalt-500) 45%, var(--plum-500));
+  --protect-bottom: linear-gradient(0deg, var(--night-950) 0%, transparent 100%);
+
+  /* motion — calm, floating; no bounce */
+  --ease-out: cubic-bezier(.16,.84,.36,1); /* @kind other */
+  --ease-in-out: cubic-bezier(.65,.05,.36,1); /* @kind other */
+  --dur-fast: 140ms; /* @kind other */
+  --dur-med: 240ms; /* @kind other */
+  --dur-slow: 520ms; /* @kind other */
+}

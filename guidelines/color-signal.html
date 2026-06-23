@@ -1,0 +1,15 @@
+<!-- @dsCard group="Colors" viewport="700x150" name="Signal / status" subtitle="Rise, fall, warn, info — used on the timeline" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<style>
+  body{margin:0;padding:22px;background:var(--bg);display:flex;gap:14px;}
+  .chip{flex:1;border-radius:var(--radius-md);padding:14px;background:var(--surface-card);box-shadow:var(--shadow-md),var(--rim-light);border:1px solid var(--border-strong);}
+  .dot{width:14px;height:14px;border-radius:50%;margin-bottom:10px;}
+  .t{font:var(--type-label);color:var(--text-primary);}
+  .v{font:var(--type-mono-eyebrow);color:var(--text-muted);margin-top:2px;}
+</style></head>
+<body>
+  <div class="chip"><div class="dot" style="background:var(--signal-rise);box-shadow:0 0 12px var(--signal-rise)"></div><div class="t">Rising</div><div class="v">--signal-rise</div></div>
+  <div class="chip"><div class="dot" style="background:var(--signal-fall);box-shadow:0 0 12px var(--signal-fall)"></div><div class="t">Declining</div><div class="v">--signal-fall</div></div>
+  <div class="chip"><div class="dot" style="background:var(--signal-warn);box-shadow:0 0 12px var(--signal-warn)"></div><div class="t">Caution</div><div class="v">--signal-warn</div></div>
+  <div class="chip"><div class="dot" style="background:var(--signal-info);box-shadow:0 0 12px var(--signal-info)"></div><div class="t">Info</div><div class="v">--signal-info</div></div>
+</body></html>

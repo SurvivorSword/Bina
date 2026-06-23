@@ -1,0 +1,53 @@
+/* Bina — Typography tokens
+   Cormorant Garamond (display serif) · Hanken Grotesk (body) · IBM Plex Mono (data) */
+
+:root {
+  /* families */
+  --font-display: 'Cormorant Garamond', 'Iowan Old Style', Georgia, serif;
+  --font-body:    'Hanken Grotesk', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono:    'IBM Plex Mono', 'SFMono-Regular', ui-monospace, monospace;
+
+  /* fluid type scale — display leans large & airy, body stays grounded */
+  --text-9xl: 7.5rem;   /* hero moon-headline */
+  --text-8xl: 5.5rem;
+  --text-7xl: 4.25rem;
+  --text-6xl: 3.25rem;
+  --text-5xl: 2.5rem;
+  --text-4xl: 2rem;
+  --text-3xl: 1.625rem;
+  --text-2xl: 1.375rem;
+  --text-xl:  1.1875rem;
+  --text-lg:  1.0625rem;
+  --text-md:  0.9375rem;   /* base body */
+  --text-sm:  0.8125rem;
+  --text-xs:  0.6875rem;   /* mono micro-labels */
+
+  /* weights */
+  --fw-regular: 400; /* @kind font */
+  --fw-medium:  500; /* @kind font */
+  --fw-semibold:600; /* @kind font */
+  --fw-bold:    700; /* @kind font */
+  --fw-black:   800; /* @kind font */
+
+  /* line heights */
+  --lh-tight:  1.05; /* @kind font */
+  --lh-snug:   1.2; /* @kind font */
+  --lh-normal: 1.5; /* @kind font */
+  --lh-relaxed:1.65; /* @kind font */
+
+  /* letter spacing */
+  --ls-tighter: -0.03em; /* @kind font */
+  --ls-tight:   -0.015em; /* @kind font */
+  --ls-normal:  0; /* @kind font */
+  --ls-wide:    0.04em; /* @kind font */
+  --ls-wider:   0.12em; /* @kind font */
+
+  /* semantic roles */
+  --type-hero:      var(--fw-medium) var(--text-8xl)/var(--lh-tight) var(--font-display);
+  --type-display:   var(--fw-medium) var(--text-6xl)/var(--lh-tight) var(--font-display);
+  --type-title:     var(--fw-semibold) var(--text-4xl)/var(--lh-snug) var(--font-display);
+  --type-heading:   var(--fw-bold) var(--text-2xl)/var(--lh-snug) var(--font-body);
+  --type-body:      var(--fw-regular) var(--text-md)/var(--lh-relaxed) var(--font-body);
+  --type-label:     var(--fw-semibold) var(--text-sm)/var(--lh-normal) var(--font-body);
+  --type-mono-eyebrow: var(--fw-medium) var(--text-xs)/var(--lh-normal) var(--font-mono);
+}

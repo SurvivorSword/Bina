@@ -1,0 +1,21 @@
+<!-- @dsCard group="Colors" viewport="700x170" name="Semantic surfaces" subtitle="How neutrals map to layered surfaces + text" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<style>
+  body{margin:0;padding:22px;background:var(--surface-sunken);}
+  .bg{background:var(--bg);border-radius:var(--radius-lg);padding:18px;}
+  .raised{background:var(--bg-raised);border-radius:var(--radius-md);padding:16px;border:1px solid var(--border-strong);}
+  .card{background:var(--surface-card);border-radius:var(--radius-sm);padding:14px;box-shadow:var(--shadow-md),var(--rim-light);border:1px solid var(--border-subtle);}
+  .lbl{font:var(--type-mono-eyebrow);color:var(--text-muted);}
+  .h{font:var(--fw-bold) 15px var(--font-body);color:var(--text-primary);margin:2px 0;}
+  .s{font:var(--text-sm) var(--font-body);color:var(--text-secondary);}
+</style></head>
+<body>
+  <div class="bg"><div class="lbl">--bg</div>
+    <div class="raised" style="margin-top:8px"><div class="lbl">--bg-raised</div>
+      <div class="card" style="margin-top:8px"><div class="lbl">--surface-card</div>
+        <div class="h">Primary text on card</div>
+        <div class="s">Secondary text sits quieter beneath.</div>
+      </div>
+    </div>
+  </div>
+</body></html>

@@ -1,0 +1,85 @@
+/* Bina — Color tokens
+   A nocturnal palette pulled straight from the moonlit-field hero:
+   midnight sky, luminous moon-white, bioluminescent cyan, cobalt ribbon,
+   plum hair, soft gold trim. Dark-first: :root IS the night theme. */
+
+:root {
+  /* ── Night neutrals (cool, blue-tinted) ─────────────────────────── */
+  --night-950: #04070F;   /* deepest void */
+  --night-900: #080E1F;   /* app background */
+  --night-850: #0C1428;   /* raised background */
+  --night-800: #111B36;   /* card surface */
+  --night-750: #16213F;   /* card surface, hover */
+  --night-700: #1D2B4F;   /* border / divider strong */
+  --night-600: #283A66;   /* border subtle on dark */
+  --night-500: #3A4F82;   /* muted line / disabled fill */
+  --night-400: #5C71A2;   /* muted text */
+  --night-300: #8493BE;   /* secondary text */
+  --night-200: #B4BFDC;   /* secondary text bright */
+  --night-100: #DBE2F3;   /* primary text dim */
+  --night-50:  #EDF1FB;   /* primary text */
+  --moon:      #F6F9FF;   /* luminous white — headlines, the moon */
+
+  /* ── Glow (violet — the signature primary accent) ──────────────── */
+  --glow-100: #EFEAFF;
+  --glow-300: #C9B8FF;
+  --glow-400: #B79EFF;
+  --glow-500: #A78BFF;    /* primary */
+  --glow-600: #8E6BF5;
+  --glow-700: #7C5BEA;
+
+  /* ── Sky (luminous pale blue — cool structural accent) ──────────── */
+  --cobalt-400: #9ED3FF;
+  --cobalt-500: #74B8F2;
+  --cobalt-600: #4D93D9;
+
+  /* ── Mint (fresh green — fresh counter-accent) ──────────────────── */
+  --plum-300: #B6EFB2;
+  --plum-400: #8FE38A;
+  --plum-500: #6FCF6B;
+  --plum-600: #5CB85A;
+
+  /* ── Gold (warm trim — rare highlight, awards/featured) ─────────── */
+  --gold-300: #F7E2AC;
+  --gold-400: #F2D38A;
+  --gold-500: #D9B45F;
+
+  /* ── Signal (status) ────────────────────────────────────────────── */
+  --signal-rise:   #4FD6A0;   /* trending up / positive */
+  --signal-fall:   #F0756B;   /* declining / negative */
+  --signal-warn:   #E0BC76;   /* caution */
+  --signal-info:   var(--glow-500);
+
+  /* ════ SEMANTIC ALIASES ═════════════════════════════════════════ */
+
+  /* surfaces */
+  --bg:            var(--night-900);
+  --bg-raised:     var(--night-850);
+  --surface-card:  var(--night-800);
+  --surface-hover: var(--night-750);
+  --surface-sunken:var(--night-950);
+
+  /* text */
+  --text-display:    var(--moon);
+  --text-primary:    var(--night-50);
+  --text-secondary:  var(--night-300);
+  --text-muted:      var(--night-400);
+  --text-on-accent:  #04070F;
+  --text-link:       var(--glow-400);
+
+  /* lines */
+  --border-subtle:  var(--night-600);
+  --border-strong:  var(--night-700);
+  --border-glow:    color-mix(in oklch, var(--glow-500) 45%, transparent);
+
+  /* accents */
+  --accent:          var(--glow-500);
+  --accent-hover:    var(--glow-400);
+  --accent-press:    var(--glow-600);
+  --accent-soft:     color-mix(in oklch, var(--glow-500) 16%, var(--night-850));
+  --accent-2:        var(--plum-400);
+  --accent-3:        var(--gold-400);
+
+  /* focus ring */
+  --ring: color-mix(in oklch, var(--glow-400) 70%, transparent);
+}

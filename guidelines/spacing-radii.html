@@ -1,0 +1,16 @@
+<!-- @dsCard group="Spacing" viewport="700x160" name="Corner radii" subtitle="Soft on structure; full only for chips & avatars" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<style>
+  body{margin:0;padding:24px;background:var(--bg);display:flex;gap:18px;align-items:flex-end;}
+  .col{display:flex;flex-direction:column;align-items:center;gap:10px;}
+  .box{width:74px;height:74px;background:var(--surface-card);border:1px solid var(--border-subtle);box-shadow:var(--rim-light);}
+  .n{font:var(--type-mono-eyebrow);color:var(--text-muted);}
+</style></head>
+<body>
+  <div class="col"><div class="box" style="border-radius:var(--radius-xs)"></div><div class="n">xs·4</div></div>
+  <div class="col"><div class="box" style="border-radius:var(--radius-sm)"></div><div class="n">sm·7</div></div>
+  <div class="col"><div class="box" style="border-radius:var(--radius-md)"></div><div class="n">md·11</div></div>
+  <div class="col"><div class="box" style="border-radius:var(--radius-lg)"></div><div class="n">lg·16</div></div>
+  <div class="col"><div class="box" style="border-radius:var(--radius-xl)"></div><div class="n">xl·24</div></div>
+  <div class="col"><div class="box" style="border-radius:var(--radius-full)"></div><div class="n">full</div></div>
+</body></html>

@@ -1,0 +1,15 @@
+<!-- @dsCard group="Brand" viewport="700x180" name="Gradients" subtitle="Sky, moonglow, aurora, accent" -->
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><link rel="stylesheet" href="../styles.css">
+<style>
+  body{margin:0;padding:22px;background:var(--bg);display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+  .g{height:104px;border-radius:var(--radius-md);box-shadow:var(--shadow-md);display:flex;align-items:flex-end;padding:10px;}
+  .n{font:var(--type-mono-eyebrow);color:var(--moon);mix-blend-mode:difference;}
+  .sky{background:var(--grad-sky);position:relative;overflow:hidden;}
+  .sky::after{content:"";position:absolute;inset:0;background:var(--grad-moon);}
+</style></head>
+<body>
+  <div class="g sky"><span class="n">grad-sky + moon</span></div>
+  <div class="g" style="background:var(--grad-accent)"><span class="n">grad-accent</span></div>
+  <div class="g" style="background:var(--grad-aurora)"><span class="n">grad-aurora</span></div>
+  <div class="g" style="background:var(--grad-moon),var(--night-850)"><span class="n">grad-moon</span></div>
+</body></html>
