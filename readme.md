@@ -22,13 +22,10 @@ cards) · `components/core/` (React primitives) · `ui_kits/bina-app/` (product 
 (logo + imagery) · `SKILL.md` (Claude Code skill wrapper).
 
 ## Sources given
-- `uploads/少女.jpg` — the sole brand reference image (an ethereal, moonlit anime scene). Copied
-  to `assets/moonlit-hero.jpg` and used as the hero / imagery treatment.
 - Company description (verbatim): *"Timeline of most popular AI topics."*
 
 No codebase, Figma, or existing brand guide was provided. The visual direction below is an
-**original system derived from the reference image**, not a recreation of an existing product.
-See CAVEATS at the bottom.
+**original system derived from the reference image**
 
 ---
 
