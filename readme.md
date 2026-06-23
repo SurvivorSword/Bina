@@ -9,6 +9,10 @@ brand reference supplied — a moonlit field of bioluminescent flowers under a v
 midnight blues, luminous moon-white, glowing violet, sky, mint, and rare gold.
 
 ## Quick start
+Visit
+```html
+[<link rel="stylesheet" href="styles.css">](https://survivorsword.github.io/Bina/ui_kits/bina-app/index.html)
+```
 Link the one global stylesheet and you inherit every token + webfont:
 ```html
 <link rel="stylesheet" href="styles.css">
