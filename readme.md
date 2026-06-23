@@ -19,7 +19,7 @@ recreation, or any file in `guidelines/` for a foundation specimen.
 
 **Repo layout:** `styles.css` (entry) · `tokens/` (CSS variables) · `guidelines/` (specimen
 cards) · `components/core/` (React primitives) · `ui_kits/bina-app/` (product demo) · `assets/`
-(logo + imagery) · `SKILL.md` (Claude Code skill wrapper).
+(logo + imagery) · `SKILL.md` (Skill wrapper).
 
 ## Sources given
 - Company description (verbatim): *"Timeline of most popular AI topics."*
@@ -93,7 +93,7 @@ Root:
 - `assets/` — `moonlit-hero.jpg` (brand reference), `bina-mark.svg` (crescent logo).
 - `components/core/` — reusable primitives + `core.card.html`.
 - `ui_kits/bina-app/` — the product recreation (home timeline + topic detail).
-- `SKILL.md` — Agent-Skill wrapper for use in Claude Code.
+- `SKILL.md` — Agent-Skill wrapper.
 
 ### Components (`window.SeleneDesignSystem_7655ad`)
 `Button`, `IconButton`, `Badge`, `Tag`, `Card`, `Input`, `Switch`, `Avatar`, `Tabs`, `Tooltip`,
@@ -105,13 +105,3 @@ and the Bina App screen are tagged as **starting points**.
   `TimelineHome.jsx`, `TopicDetail.jsx`, `data.js`, `icons.js`. See its README.
 
 ---
-
-## CAVEATS
-- **Direction is inferred.** The only brand input was one image + a one-line description. The
-  nocturnal/editorial direction, product framing, name "Bina", and all copy are an original
-  interpretation. If you had a different product or brand in mind, tell me and I'll re-aim.
-- **Fonts load from Google Fonts CDN** via `@import` in `tokens/fonts.css` (Cormorant Garamond,
-  Hanken Grotesk, IBM Plex Mono) — they are not self-hosted, so the compiler reports 0 `@font-face`
-  files. If you need offline/self-hosted webfonts, send the files and I'll wire `@font-face`.
-- **Icons are a Lucide-style substitution** (no brand icon set existed). Swap if you have one.
-- Logo is a simple geometric crescent mark I created — happy to refine or replace with a real logo.
