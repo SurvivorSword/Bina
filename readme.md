@@ -23,31 +23,13 @@ recreation, or any file in `guidelines/` for a foundation specimen.
 cards) · `components/core/` (React primitives) · `ui_kits/bina-app/` (product demo) · `assets/`
 (logo + imagery) · `SKILL.md` (Skill wrapper).
 
-## Sources given
-- Company description (verbatim): *"Timeline of most popular AI topics."*
-
+## Sources
 No codebase, Figma, or existing brand guide was provided. The visual direction below is an
 **original system derived from the reference image**
 
 ---
 
-## Content fundamentals
-How Bina writes.
-
-- **Voice:** literary but precise — an archivist of ideas, not a hype-machine. Short declarative
-  sentences. *"Topics surface, peak, and fade."* *"Every idea the field obsessed over, in order."*
-- **Person:** third-person about the subject ("the field", "the conversation"); "Bina" refers to
-  the product by name. Avoid "we"/"you" in editorial copy; "you" is fine in product UI affordances
-  ("Track this topic").
-- **Casing:** Sentence case everywhere — headlines, buttons, nav. The ONLY uppercase is the mono
-  **eyebrow / micro-label** (`.eyebrow`), used for machine-y metadata: `INDEXED WEEKLY`,
-  `PEAK APR 2025 · 48.2K`. Tracking is wide (`--ls-wider`).
-- **Numbers & dates:** always set in the mono face (IBM Plex Mono). Deltas use ▲/▼ + percent.
-  Dates as `2025-04` or `Apr 2025`.
-- **Tone words:** quiet, luminous, nocturnal, calm. Never "revolutionary", "unleash", "game-changing".
-- **Emoji:** none. Status is shown with glowing dots and mono badges, never emoji.
-
-## Visual foundations
+## Bina fundamentals
 - **Color:** Dark-first — `:root` *is* the night theme. Cool blue-tinted neutrals
   (`--night-950 → --moon`). One signature accent: luminous **violet** (`--glow-500`, `#A78BFF`),
   used sparingly for the single key action and live data. Counter-accents: **sky** (cool structure),
