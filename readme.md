@@ -1,7 +1,7 @@
-# Bina Design System
+# Bina
 
-> The living timeline of artificial intelligence — a nocturnal, editorial data product that
-> tracks the rise and fall of every conversation in AI.
+*The living timeline of artificial intelligence — a nocturnal, editorial data product that*
+*tracks the rise and fall of every conversation in AI.*
 
 Bina presents a "timeline of the most popular AI topics" as a calm, luminous record: topics
 surface, peak, and fade against a midnight sky. The aesthetic is drawn directly from the single
